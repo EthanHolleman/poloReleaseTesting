@@ -8,6 +8,7 @@ import platform
 import sys
 
 cur_dir = Path().resolve()
+print(cur_dir)
 
 block_cipher = None
 
