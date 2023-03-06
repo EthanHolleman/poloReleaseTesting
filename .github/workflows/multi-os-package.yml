@@ -1,4 +1,4 @@
-name: Create Release test
+name: Create Release test 1
 
 on:
   push:
