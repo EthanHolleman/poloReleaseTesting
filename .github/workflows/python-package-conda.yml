@@ -25,16 +25,16 @@ jobs:
       run: |
         pyinstaller Polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
     
-    # - name: build
-    #     run: |
-    #       echo "done!"
-    #   - uses: "marvinpinto/action-automatic-releases@latest"
-    #     with:
-    #       repo_token: "${{ secrets.GITHUB_TOKEN }}"
-    #       automatic_release_tag: "latest"
-    #       prerelease: true
-    #       title: "Development Build"
-    #       files: |
-    #         LICENSE.txt
-    #         dist/PoloUbuntuLatest
+    - name: build
+        run: |
+          echo "done!"
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            LICENSE.txt
+            dist/PoloUbuntuLatest
 
