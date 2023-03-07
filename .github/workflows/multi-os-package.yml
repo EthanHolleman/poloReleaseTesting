@@ -3,7 +3,7 @@ name: Create Release test 2
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   create_release:
@@ -37,8 +37,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Install Python all OSs
-
       - name: Setup Python 3.7 Mac
         if: matrix.os == 'macos-latest'
         uses: actions/setup-python@v3
@@ -51,47 +49,38 @@ jobs:
         with:
           python-version: "3.7"
 
+      - name: Add conda to system path Mac
+        if: matrix.os == 'macos-latest'
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
 
-      # Add conda to all operating systems path
-
-      # - name: Add conda to system path Mac
-      #   if: matrix.os == 'macos-latest'
-      #   run: |
-      #     # $CONDA is an environment variable pointing to the root of the miniconda directory
-      #     echo $CONDA/bin >> $GITHUB_PATH
-
-      # - name: Add conda to system path Linux
-      #   if: matrix.os == 'ubuntu-latest'
-      #   run: |
-      #     # $CONDA is an environment variable pointing to the root of the miniconda directory
-      #     echo $CONDA/bin >> $GITHUB_PATH
+      - name: Add conda to system path Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
 
       - name: Add conda to system path Windows
         if: matrix.os == 'windows-latest'
-        uses: conda-incubator/setup-miniconda@v2
+        uses: s-weigand/setup-conda@v1
         with:
-          python-version: "3.7"
-          channels: conda-forge,anaconda,defaults
+          activate-conda: false
 
-      
+      - name: Install dependencies Mac
+        if: matrix.os == 'macos-latest'
+        run: |
+          conda env update --file environment.yml --name base
 
-      # Install depends using conda
-
-      # - name: Install dependencies Mac
-      #   if: matrix.os == 'macos-latest'
-      #   run: |
-      #     conda env update --file environment.yml --name base
-
-      # - name: Install dependencies Linux
-      #   if: matrix.os == 'ubuntu-latest'
-      #   run: |
-      #     conda env update --file environment.yml --name base
+      - name: Install dependencies Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          conda env update --file environment.yml --name base
 
       - name: Install dependencies Windows
         if: matrix.os == 'windows-latest'
         run: |
-          conda env update --file environment.yml
-
+          conda env update --file environment.yml --name base
 
       # - name: Release
       #   uses: softprops/action-gh-release@v1
