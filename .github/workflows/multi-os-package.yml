@@ -108,7 +108,7 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pyinstaller Polo.spec F &&
-      
+
       - name: Echo windows die
         if: matrix.os == 'windows-latest'
         run: |
@@ -121,8 +121,8 @@ jobs:
 #         run: |
 #           winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
 
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     tag_name: ${{ needs.create_release.outputs.tag-name }}
-      #     files: release_${{ matrix.release_suffix }}
+# - name: Release
+#   uses: softprops/action-gh-release@v1
+#   with:
+#     tag_name: ${{ needs.create_release.outputs.tag-name }}
+#     files: release_${{ matrix.release_suffix }}

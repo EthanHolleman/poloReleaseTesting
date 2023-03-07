@@ -14,9 +14,6 @@ block_cipher = None
 
 # update the repo to latest version
 
-print('Pulling latest changes from git')
-os.system('git pull')
-
 # path to tensorflow in anaconda env
 OS = platform.system()
 
@@ -83,7 +80,8 @@ a = Analysis(['src/Polo.py'],
              excludes=[],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
-             cipher=block_cipher)
+             cipher=block_cipher,
+             noarchive=False)
 
 pyz = PYZ(a.pure, a.zipped_data,
           cipher=block_cipher)
