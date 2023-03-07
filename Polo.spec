@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import platform
 import sys
+import PyQt5
 
 cur_dir = Path().resolve()
 print(cur_dir)
@@ -73,7 +74,8 @@ a = Analysis(['src/Polo.py'],
              pathex=[cur_dir],
              binaries=[],
              datas=[('src/data', 'data/'), ('src/astor', 'astor/'),
-                    ('src/unrar', 'unrar/'), ('src/templates', 'templates/')], #+ tensorflow_binaries + pptx_depends,
+                    ('src/unrar', 'unrar/'), ('src/templates', 'templates/')
+                    (str(Path(PyQt5.__file__).parent.parent.parent.parent.parent.joinpath('plugins/platforms')), 'platforms')], #+ tensorflow_binaries + pptx_depends,
              hiddenimports=[],
              hookspath=['hooks'],
              runtime_hooks=[],
