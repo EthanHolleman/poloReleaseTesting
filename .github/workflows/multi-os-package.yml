@@ -90,7 +90,7 @@ jobs:
       - name: Install dependencies Windows
         if: matrix.os == 'windows-latest'
         run: |
-          conda env update --file environment.yml --channel conda-forge --channel anaconda --channel defaults
+          conda env update --file environment.yml
 
 
       # - name: Release
