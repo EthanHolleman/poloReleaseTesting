@@ -54,36 +54,36 @@ jobs:
 
       # Add conda to all operating systems path
 
-      - name: Add conda to system path Mac
-        if: matrix.os == 'macos-latest'
-        run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          echo $CONDA/bin >> $GITHUB_PATH
+      # - name: Add conda to system path Mac
+      #   if: matrix.os == 'macos-latest'
+      #   run: |
+      #     # $CONDA is an environment variable pointing to the root of the miniconda directory
+      #     echo $CONDA/bin >> $GITHUB_PATH
 
-      - name: Add conda to system path Linux
-        if: matrix.os == 'ubuntu-latest'
-        run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          echo $CONDA/bin >> $GITHUB_PATH
+      # - name: Add conda to system path Linux
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: |
+      #     # $CONDA is an environment variable pointing to the root of the miniconda directory
+      #     echo $CONDA/bin >> $GITHUB_PATH
 
       - name: Add conda to system path Windows
         if: matrix.os == 'windows-latest'
         run: |
           # $CONDA is an environment variable pointing to the root of the miniconda directory
-          set PATH=%PATH%;GITHUB_PATH
+          Add-Content $env:GITHUB_PATH $CONDA/bin
       
 
       # Install depends using conda
 
-      - name: Install dependencies Mac
-        if: matrix.os == 'macos-latest'
-        run: |
-          conda env update --file environment.yml --name base
+      # - name: Install dependencies Mac
+      #   if: matrix.os == 'macos-latest'
+      #   run: |
+      #     conda env update --file environment.yml --name base
 
-      - name: Install dependencies Linux
-        if: matrix.os == 'ubuntu-latest'
-        run: |
-          conda env update --file environment.yml --name base
+      # - name: Install dependencies Linux
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: |
+      #     conda env update --file environment.yml --name base
 
       - name: Install dependencies Windows
         if: matrix.os == 'windows-latest'
