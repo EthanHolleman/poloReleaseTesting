@@ -1,6 +1,8 @@
 name: poloUpdate
 channels:
   - defaults
+  - conda-forge
+  - anaconda
 dependencies:
   - tensorflow=1.13
   - pip=22.3.1
