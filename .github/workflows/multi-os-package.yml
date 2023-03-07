@@ -94,21 +94,22 @@ jobs:
         run: |
           pip install molmass python-pptx
 
-      # - name: Run Pyinstaller Mac
-      #   if: matrix.os == 'macos-latest'
-      #   run: |
-      #     pyinstaller Polo.spec F && mv dist/Polo dist/PoloMacLatest
+      - name: Run Pyinstaller Mac
+        if: matrix.os == 'macos-latest'
+        run: |
+          pyinstaller Polo.spec F && mv dist/Polo dist/polo_mac
 
-      # - name: Run Pyinstaller Linux
-      #   if: matrix.os == 'ubuntu-latest'
-      #   run: |
-      #     pyinstaller Polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
+      - name: Run Pyinstaller Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          pyinstaller Polo.spec F && mv dist/Polo dist/polo_ubuntu
 
       - name: Run Pyinstaller Windows
         if: matrix.os == 'windows-latest'
         run: |
-          pyinstaller Polo.spec F
-      
+          pyinstaller Polo.spec F 
+          move dist/Polo.exe dist/polo_windows
+
       - name: Echo windows die
         if: matrix.os == 'windows-latest'
         run: |
@@ -116,13 +117,13 @@ jobs:
           cd dist
           dir
 
-#  - name: Install inno setup Windows
-#         if: matrix.os == 'windows-latest'
-#         run: |
-#           winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
+      #  - name: Install inno setup Windows
+      #         if: matrix.os == 'windows-latest'
+      #         run: |
+      #           winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
 
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     tag_name: ${{ needs.create_release.outputs.tag-name }}
-      #     files: release_${{ matrix.release_suffix }}
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ needs.create_release.outputs.tag-name }}
+          files: release_${{ matrix.release_suffix }}
