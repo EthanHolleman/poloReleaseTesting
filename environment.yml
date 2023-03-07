@@ -3,6 +3,8 @@ channels:
   - defaults
 dependencies:
   - tensorflow=1.14.0
+  - pip=22.3.1
+  - python=3.7
   - pyqt
   - ca-certificates
   - certifi
