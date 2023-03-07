@@ -2,7 +2,7 @@ name: poloUpdate
 channels:
   - defaults
 dependencies:
-  - tensorflow=1.13.0
+  - tensorflow=1.13
   - pip=22.3.1
   - python=3.7
   - pyqt
