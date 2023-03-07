@@ -14,6 +14,7 @@ def hook(hook_api):
         'tensorflow_core',
         'astor'
     ]
+    
     for package in packages:
         datas, binaries, hiddenimports = collect_all(package)
         hook_api.add_datas(datas)
