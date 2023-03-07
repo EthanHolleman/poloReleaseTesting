@@ -94,11 +94,6 @@ jobs:
         run: |
           pip install molmass python-pptx
 
-      - name: Install inno setup Windows
-        if: matrix.os == 'windows-latest'
-        run: |
-          winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
-
       - name: Run Pyinstaller Mac
         if: matrix.os == 'macos-latest'
         run: |
@@ -113,6 +108,11 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pyinstaller Polo.spec F && mv dist/Polo dist/PoloWindowsLatest
+
+#  - name: Install inno setup Windows
+#         if: matrix.os == 'windows-latest'
+#         run: |
+#           winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
 
       # - name: Release
       #   uses: softprops/action-gh-release@v1
