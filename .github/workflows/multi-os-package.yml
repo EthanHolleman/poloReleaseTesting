@@ -88,23 +88,27 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           conda env update --file environment.yml --name base
-
-      - name: Run Pyinstaller Mac
-        if: matrix.os == 'macos-latest'
-        run: |
-          conda update -c conda-canary conda
-          pyinstaller polo.spec F && mv dist/Polo dist/PoloMacLatest
-          
-
-      - name: Run Pyinstaller Linux
-        if: matrix.os == 'ubuntu-latest'
-        run: |
-          pyinstaller polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
-
-      - name: Run Pyinstaller Windows
+      
+      - name: Install inno setup Windows
         if: matrix.os == 'windows-latest'
         run: |
-          pyinstaller polo.spec F && mv dist/Polo dist/PoloWindowsLatest
+          winget install https://jrsoftware.org/download.php/is.exe --accept-package-agreements
+
+      # - name: Run Pyinstaller Mac
+      #   if: matrix.os == 'macos-latest'
+      #   run: |
+      #     conda update -c conda-canary conda
+      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloMacLatest
+
+      # - name: Run Pyinstaller Linux
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: |
+      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
+
+      # - name: Run Pyinstaller Windows
+      #   if: matrix.os == 'windows-latest'
+      #   run: |
+      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloWindowsLatest
 
       # - name: Release
       #   uses: softprops/action-gh-release@v1
