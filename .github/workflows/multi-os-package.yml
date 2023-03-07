@@ -68,9 +68,12 @@ jobs:
 
       - name: Add conda to system path Windows
         if: matrix.os == 'windows-latest'
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: "3.7"
         run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          Add-Content $env:GITHUB_PATH $CONDA/bin
+          conda list
+
       
 
       # Install depends using conda
