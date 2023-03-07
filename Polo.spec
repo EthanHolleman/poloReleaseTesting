@@ -74,7 +74,7 @@ a = Analysis(['src/Polo.py'],
              pathex=[cur_dir],
              binaries=[],
              datas=[('src/data', 'data/'), ('src/astor', 'astor/'),
-                    ('src/unrar', 'unrar/'), ('src/templates', 'templates/')
+                    ('src/unrar', 'unrar/'), ('src/templates', 'templates/'),
                     (str(Path(PyQt5.__file__).parent.parent.parent.parent.parent.joinpath('plugins/platforms')), 'platforms')], #+ tensorflow_binaries + pptx_depends,
              hiddenimports=[],
              hookspath=['hooks'],
