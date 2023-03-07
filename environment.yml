@@ -206,4 +206,5 @@ dependencies:
   - zlib=1.2.13
   - zstd=1.5.2
   - pip:
-    - molmass
+    - molmass==2021.6.18
+prefix: /home/ethan/anaconda3/envs/poloUpdate
