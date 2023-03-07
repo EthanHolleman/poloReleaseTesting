@@ -112,9 +112,9 @@ jobs:
       - name: Echo windows die
         if: matrix.os == 'windows-latest'
         run: |
-        dir
-        cd dist
-        dir
+          dir
+          cd dist
+          dir
 
 #  - name: Install inno setup Windows
 #         if: matrix.os == 'windows-latest'
