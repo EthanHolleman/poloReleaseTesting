@@ -31,7 +31,7 @@ jobs:
           - os: macos-latest
             release_suffix: mac
           - os: windows-latest
-            release_suffix: windows
+            release_suffix: windows.exe
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -110,12 +110,6 @@ jobs:
           pyinstaller Polo.spec F 
           move dist/Polo.exe dist/polo_windows
 
-      - name: Echo windows die
-        if: matrix.os == 'windows-latest'
-        run: |
-          dir
-          cd dist
-          dir
 
       #  - name: Install inno setup Windows
       #         if: matrix.os == 'windows-latest'
