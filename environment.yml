@@ -8,9 +8,9 @@ dependencies:
   - certifi
   - openssl
   - jinja2
-  - python-pptx
   - requests
   - matplotlib
   - pyinstaller
   - pip:
     - molmass
+    - python-pptx
