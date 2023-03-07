@@ -94,20 +94,27 @@ jobs:
         run: |
           pip install molmass python-pptx
 
-      - name: Run Pyinstaller Mac
-        if: matrix.os == 'macos-latest'
-        run: |
-          pyinstaller Polo.spec F && mv dist/Polo dist/PoloMacLatest
+      # - name: Run Pyinstaller Mac
+      #   if: matrix.os == 'macos-latest'
+      #   run: |
+      #     pyinstaller Polo.spec F && mv dist/Polo dist/PoloMacLatest
 
-      - name: Run Pyinstaller Linux
-        if: matrix.os == 'ubuntu-latest'
-        run: |
-          pyinstaller Polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
+      # - name: Run Pyinstaller Linux
+      #   if: matrix.os == 'ubuntu-latest'
+      #   run: |
+      #     pyinstaller Polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
 
       - name: Run Pyinstaller Windows
         if: matrix.os == 'windows-latest'
         run: |
-          pyinstaller Polo.spec F && mv dist/Polo dist/PoloWindowsLatest
+          pyinstaller Polo.spec F &&
+      
+      - name: Echo windows die
+        if: matrix.os == 'windows-latest'
+        run: |
+        dir
+        cd dist
+        dir
 
 #  - name: Install inno setup Windows
 #         if: matrix.os == 'windows-latest'
