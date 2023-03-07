@@ -77,6 +77,7 @@ jobs:
       - name: Install dependencies Mac
         if: matrix.os == 'macos-latest'
         run: |
+          conda update -c conda-canary conda
           conda env update --file environment.yml --name base
 
       - name: Install dependencies Linux
@@ -92,7 +93,7 @@ jobs:
       - name: Install inno setup Windows
         if: matrix.os == 'windows-latest'
         run: |
-          winget install https://jrsoftware.org/download.php/is.exe --accept-package-agreements
+          winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
 
       # - name: Run Pyinstaller Mac
       #   if: matrix.os == 'macos-latest'
