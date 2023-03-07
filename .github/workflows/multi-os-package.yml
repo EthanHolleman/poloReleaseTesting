@@ -103,7 +103,7 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: |
           pyinstaller Polo.spec
-          zip -r dist/Polo PoloZip_ubuntu
+          zip -r  PoloZip_ubuntu dist/Polo
 
 
       # - name: Run Pyinstaller Windows
@@ -122,4 +122,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ needs.create_release.outputs.tag-name }}
-          files: dist/polo_${{ matrix.release_suffix }}
+          files: PoloZip_${{ matrix.release_suffix }}
