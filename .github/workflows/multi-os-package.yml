@@ -71,6 +71,8 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: "3.7"
+          activate-environment: poloUpdate
+          environment-file: environment.yml
 
       
 
