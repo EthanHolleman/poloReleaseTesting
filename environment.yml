@@ -12,3 +12,5 @@ dependencies:
   - requests
   - matplotlib
   - pyinstaller
+  - pip:
+    - molmass
