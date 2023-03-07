@@ -594,3 +594,58 @@ DEBUG	2023-03-06 20:57:22,505	polo.widgets.optimize_widget	93	Created <polo.widg
 DEBUG	2023-03-06 20:57:23,182	polo.windows.main_window	83	Created <polo.windows.main_window.MainWindow object at 0x7fe5529429b0>
 DEBUG	2023-03-06 20:57:23,389	__main__	73	Launched main window
 INFO	2023-03-06 20:57:28,404	polo.windows.main_window	158	Closed Polo
+DEBUG	2023-03-07 07:52:55,791	polo.crystallography.run	1878	Added 1535 Cocktails
+DEBUG	2023-03-07 07:52:55,792	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC2_cocktail_list_092809.csv
+DEBUG	2023-03-07 07:52:55,954	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:55,954	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC8_1536_cocktail_list_complist.csv
+DEBUG	2023-03-07 07:52:56,026	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,026	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC5_1536_cocktail_list_complist.csv
+DEBUG	2023-03-07 07:52:56,124	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,124	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC3_1536_cocktail_list_complist.csv
+DEBUG	2023-03-07 07:52:56,205	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,205	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC4_1536_cocktail_list_complist-for-web.csv
+DEBUG	2023-03-07 07:52:56,298	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,298	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC6_1536_cocktail_list_complist.csv
+DEBUG	2023-03-07 07:52:56,461	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,461	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/13_C1536.csv
+DEBUG	2023-03-07 07:52:56,523	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,523	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/13A_C1536.csv
+DEBUG	2023-03-07 07:52:56,622	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,622	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/10_C1536.csv
+DEBUG	2023-03-07 07:52:56,699	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,699	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/17_C1536_B.csv
+DEBUG	2023-03-07 07:52:56,797	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,797	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/14_C1536.csv
+DEBUG	2023-03-07 07:52:56,871	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:56,872	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/11_C1536.csv
+DEBUG	2023-03-07 07:52:57,039	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,039	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/16_C1536.csv
+DEBUG	2023-03-07 07:52:57,127	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,127	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/12_C1536.csv
+DEBUG	2023-03-07 07:52:57,227	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,228	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/9_C1536.csv
+DEBUG	2023-03-07 07:52:57,333	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,333	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/15_C1536.csv
+DEBUG	2023-03-07 07:52:57,425	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,425	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/21_C1536.csv
+DEBUG	2023-03-07 07:52:57,508	polo.crystallography.run	1878	Added 1536 Cocktails
+DEBUG	2023-03-07 07:52:57,508	polo.crystallography.run	1866	Created Menu for path /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/MSC9_1536_cocktail_list_complist.csv
+DEBUG	2023-03-07 07:52:58,004	__main__	38	Detected OS: Linux
+DEBUG	2023-03-07 07:52:58,005	__main__	39	Working directory: /home/ethan/Documents/mySoftware/poloRework/releaseTesting
+DEBUG	2023-03-07 07:52:58,005	__main__	40	Polo directory: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/savedmodel
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/cocktail_data/cocktail_meta.csv
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/.polo_backups
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/.tmp
+DEBUG	2023-03-07 07:52:58,005	__main__	45	Exists: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data
+DEBUG	2023-03-07 07:52:58,005	__main__	52	All preflight checks passed 6 == 6
+DEBUG	2023-03-07 07:52:58,024	__main__	69	App icon location: /home/ethan/Documents/mySoftware/poloRework/releaseTesting/src/data/images/logos/polo.png
+DEBUG	2023-03-07 07:52:58,041	polo.widgets.run_tree	66	Created <polo.widgets.run_tree.RunTree object at 0x7f92e3207410>
+DEBUG	2023-03-07 07:52:58,053	polo.widgets.run_organizer	59	Created <polo.widgets.run_organizer.RunOrganizer object at 0x7f92e32072d0>
+DEBUG	2023-03-07 07:52:58,056	polo.widgets.slideshow_viewer	231	Made <polo.widgets.slideshow_viewer.SlideshowViewer object at 0x7f92e3207eb0>
+DEBUG	2023-03-07 07:52:58,062	polo.widgets.table_inspector	41	Created <polo.widgets.table_inspector.TableInspector object at 0x7f92df51a230>
+DEBUG	2023-03-07 07:52:58,066	polo.widgets.optimize_widget	93	Created <polo.widgets.optimize_widget.OptimizeWidget object at 0x7f92df523a50>
+DEBUG	2023-03-07 07:52:58,953	polo.windows.main_window	83	Created <polo.windows.main_window.MainWindow object at 0x7f92e32070f0>
+DEBUG	2023-03-07 07:52:59,068	__main__	73	Launched main window
+INFO	2023-03-07 07:53:02,447	polo.windows.main_window	158	Closed Polo

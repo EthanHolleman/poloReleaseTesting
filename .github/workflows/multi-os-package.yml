@@ -108,7 +108,7 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pyinstaller Polo.spec F 
-          move dist/Polo.exe dist/polo_windows
+          move dist/Polo.exe dist/polo_windows.exe
 
 
       #  - name: Install inno setup Windows
