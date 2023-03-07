@@ -99,21 +99,20 @@ jobs:
         run: |
           winget install https://jrsoftware.org/download.php/is.exe --locale en-US --accept-package-agreements --accept-source-agreements
 
-      # - name: Run Pyinstaller Mac
-      #   if: matrix.os == 'macos-latest'
-      #   run: |
-      #     conda update -c conda-canary conda
-      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloMacLatest
+      - name: Run Pyinstaller Mac
+        if: matrix.os == 'macos-latest'
+        run: |
+          pyinstaller Polo.spec F && mv dist/Polo dist/PoloMacLatest
 
-      # - name: Run Pyinstaller Linux
-      #   if: matrix.os == 'ubuntu-latest'
-      #   run: |
-      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
+      - name: Run Pyinstaller Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          pyinstaller Polo.spec F && mv dist/Polo dist/PoloUbuntuLatest
 
-      # - name: Run Pyinstaller Windows
-      #   if: matrix.os == 'windows-latest'
-      #   run: |
-      #     pyinstaller polo.spec F && mv dist/Polo dist/PoloWindowsLatest
+      - name: Run Pyinstaller Windows
+        if: matrix.os == 'windows-latest'
+        run: |
+          pyinstaller Polo.spec F && mv dist/Polo dist/PoloWindowsLatest
 
       # - name: Release
       #   uses: softprops/action-gh-release@v1
