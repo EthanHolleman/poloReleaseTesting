@@ -13,6 +13,3 @@ dependencies:
   - requests
   - matplotlib
   - pyinstaller
-  - pip:
-    - molmass
-    - python-pptx
