@@ -1,19 +1,21 @@
-name: poloUpdate
+name: poloExp
 channels:
   - defaults
   - conda-forge
   - anaconda
 dependencies:
   - tensorflow=1.13
-  - pip=22.3.1
-  - python=3.7
   - pyqt=5.15
+  - python
+  - pip
   - ca-certificates
   - certifi
-  - openssl
   - jinja2
   - requests
   - matplotlib
   - pyinstaller
   - brotlipy
   - libxcb
+  - pip:
+    - molmass
+    - python-pptx
