@@ -38,23 +38,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Python 3.6 Mac
+      - name: Setup Python 3.7 Mac
         if: matrix.os == 'macos-latest'
         uses: actions/setup-python@v3
         with:
-          python-version: "3.6"
+          python-version: "3.7"
 
-      - name: Setup Python 3.6 Windows
+      - name: Setup Python 3.7 Windows
         if: matrix.os == 'windows-latest'
         uses: actions/setup-python@v3
         with:
-          python-version: "3.6"
+          python-version: "3.7"
 
-      - name: Setup Python 3.6 Linux
+      - name: Setup Python 3.7 Linux
         if: matrix.os == 'ubuntu-latest'
         uses: actions/setup-python@v3
         with:
-          python-version: "3.6"
+          python-version: "3.7"
 
       - name: Add conda to system path Mac
         if: matrix.os == 'macos-latest'
